@@ -1,0 +1,140 @@
+@media (min-width: 320px) and  (max-width: 600px){
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #ecf0f1;
+}
+    @import url('https://fonts.googleapis.com/css?family=Blinker&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Blinker', sans-serif;
+}
+ h1{
+     text-align: center;
+     width: 100%;
+     margin-left: 20%;
+     margin-top: 25%;
+     font-size: 2.2em;
+     color: #4c9bfb;
+ }
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100vw;
+}
+.un{
+    padding-left: -1px;
+    width: 100%;
+}
+.deux{
+    padding-top: 400px;
+    padding-left: -1px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper h1{
+  text-align: center;
+  margin-bottom: 15px;
+  color: #121212;
+  letter-spacing: 2px;
+}
+
+.wrapper .sub_wrapper{
+  display: flex;
+}
+
+.wrapper .sub_wrapper .hobby{
+   margin: 15px;
+  text-align: center;
+}
+
+
+.wrapper .sub_wrapper .hobby p{
+  color: #121212;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.container{
+  display: block;
+  position: relative;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  background: #d5eaff;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.container .input{
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.container .d_checkbox{
+  width: 65px;
+  height: 65px;
+  background: #4c9bfb;
+  border-radius: 50%;
+  display: none;
+}
+
+.container .d_checkbox,
+.container .fas{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.container .fas{
+  font-size: 22px;
+  color: #4c9bfb;
+}
+
+.container .input:checked ~ .d_checkbox{
+  display: block;
+}
+
+.container .input:checked ~ .fas{
+  color: #10ac84;
+}
+
+}
+#choix{
+    width: 500px;
+    display: flex;
+    margin-top: 140%;
+    margin-left: 20px;
+    justify-content: space-around;
+}
+button{
+    padding: 20px 45px;
+    font-size: 1.4em;
+    color: #ecf0f1;
+    outline: none;
+    border: none;
+
+}
+#oui{
+    background-color: #c4c4c4;
+    
+}
+#non{
+    background-color: #4c9bfb;
+
+}
+a{
+    text-decoration: none;
+    color: #ecf0f1;
+}
